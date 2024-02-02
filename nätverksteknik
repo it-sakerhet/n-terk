@@ -1,4 +1,5 @@
 Mina antekningar
+Diyar Parwana
 Kurs: Nätverksteknik, undervisas av Anders Ekberg
 
 Nätverk och OSI-modellen:
@@ -79,9 +80,6 @@ Skicka E-post i praktiken
 Hur går det till att skicka en Epost!
 Steg för steg!
 
-
-
-
 Application Layer: Outlook, Thunderbrid min favorit applikation
 Transport Layer (TCP): SMTP-server.
 
@@ -91,22 +89,29 @@ IANA (Internet Assigned Numbers Authority):
 
 
 ****************             *****************************
-Bestämmer standardportnummer för olika tjänster, t.ex., SMTP (port 25).
+IANA Bestämmer standardportnummer för olika tjänster, SMTP (port 25)
+
 IP och Subnät:
+
 IPv4:
 
-32 bitar lång.
+IPV4 är 32 bitar lång.
 Delas in i 4 oktetter.
-Varje IP kräver en submask.
-Subnet Mask:
+[xxxx].[xxxx].[xxxx].[xxxx]
 
+Varje IP kräver en submask.
+
+Subnet Mask:
 Filtrerar IP-adresser och delar upp IP i olika subnät.
 Bestämmer antalet möjliga enheter i ett nätverk.
 Tre standardnätverk (klass A, B, C):
 
 Class A: >65,536 enheter.
+
 Class B: 256-65,534 enheter.
+
 Class C: <254 enheter.
+
 Privata IP-områden (för interna nätverk):
 
 Class A: 10.x.x.x
