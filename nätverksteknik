@@ -1,0 +1,131 @@
+Mina antekningar
+Kurs: Nätverksteknik, undervisas av Anders Ekberg
+
+Nätverk och OSI-modellen:
+NAC: Network Access Card
+NIC: Network Interface Card
+OSI-modellen (Open System Interconnect)
+
+Physical Layer (Lager 1): Hårdvara, kabel, hub.
+Data Link Layer (Lager 2): ARP (Address Resolution Protocol), Switch.
+Network Layer (Lager 3): IP, router.
+Transport Layer (Lager 4): TCP, UDP-protokollen.
+Session Layer (Lager 5): Anslutning, session.
+Presentation Layer (Lager 6): Datarepresentation.
+Application Layer (Lager 7): Applikationsprotokoll (HTTP, FTP, DNS).
+
+
+Hårdvara och enheter:
+
+Hub:
+Av alla enheter kopplade till en hub, kommunikation sker med bara två enheter samtidigt.
+Bara två enheter, inte så bra.
+Men det fungerar på följande sätt.
+Vi har en ARP tabell, när vi kopplar enheterna mac adress lagras i ARP tabellen. Hub kontrollerar att hårdvaran har en mac. Om det finns en mac,då lagras den I tabellen.
+Det blir en anslutning
+
+
+
+
+Switch:
+Använder ARP-tabell för att översätta MAC-adresser.
+ARP (Address Resolution Protocol) översätter MAC till IP.
+Verkar på OSI:s datalänklager (Layer 2).
+
+Router:
+En hårdvara som fungerar som en vägvisare till andra nätverk.
+
+Har en routingtabell.
+Har minst två NAC/NIC (nätverkskort).
+Kan ha brandvägg, proxy, port forwarding, DHCP och även switch-funktioner.
+DHCP (Dynamic Host Configuration Protocol):
+
+Ser till att datorerna får lokala IP-adresser, det med hjälp av DHCP självklart...
+OSI-modell i praktiken:
+
+
+****************             *****************************
+
+Application Layer (Lager 7):
+
+Exempel: https://google.se
+Presentation Layer (Lager 6):
+
+Presentation av data (ej relevant för praktisk användning).
+Session Layer (Lager 5):
+
+Anslutning och session (ej relevant för praktisk användning).
+Transport Layer (Lager 4):
+
+TCP-protokollet.
+Network Layer (Lager 3):
+
+ARP-protokollet.
+Data Link Layer (Lager 2):
+
+ARP-protokollet.
+Physical Layer (Lager 1):
+
+Användning av kabel.
+
+
+****************             *****************************
+
+
+
+
+
+Skicka E-post i praktiken
+Hur går det till att skicka en Epost!
+Steg för steg!
+
+
+
+
+Application Layer: Outlook, Thunderbrid min favorit applikation
+Transport Layer (TCP): SMTP-server.
+
+IANA (Internet Assigned Numbers Authority):
+
+
+
+
+****************             *****************************
+Bestämmer standardportnummer för olika tjänster, t.ex., SMTP (port 25).
+IP och Subnät:
+IPv4:
+
+32 bitar lång.
+Delas in i 4 oktetter.
+Varje IP kräver en submask.
+Subnet Mask:
+
+Filtrerar IP-adresser och delar upp IP i olika subnät.
+Bestämmer antalet möjliga enheter i ett nätverk.
+Tre standardnätverk (klass A, B, C):
+
+Class A: >65,536 enheter.
+Class B: 256-65,534 enheter.
+Class C: <254 enheter.
+Privata IP-områden (för interna nätverk):
+
+Class A: 10.x.x.x
+Class B: 172.16.x.x - 172.31.x.x
+Class C: 192.168.x.x
+Subnät och Kommunikation:
+Subnätmasken bestämmer Nätverks-ID (NID) och Värd-ID (HID).
+Enheter med samma NID kan kommunicera direkt.
+Unicast (en till en), Multicast (en till flera), Broadcast (en till alla).
+Exempel:
+
+NID: 192.168.100.0/24
+Första enheten: 192.168.100.1
+Sista enheten: 192.168.100.254
+Slutliga reflektioner:
+IP-adresser, subnätmasker och routning är avgörande för att skapa och förstå nätverk.
+Klassen och typen av IP-adresser (privata/publika) påverkar nätverkets struktur och storlek.
+Förståelse för OSI-modellen och protokoll som TCP, UDP och ARP är nyckeln till att felsöka och optimera nätverkstrafik.
+
+
+****************             *****************************
+
